@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            2d game
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="body" onkeyup="keyCheck(event);">
+
+
+        
+        <div class="background" id="background">
+        <div class="score" id="score">0</div>
+            <img src="Run (1).png" alt="" id="player" class="player">
+            
+
+        </div>
+
+
+          <!--game over part-->
+<div class="gameOver" id="gameOver">
+    <video autoplay muted loop class="myVideo" id="myVideo">
+        <source src="[UNDERTALE] Game Over Screen GIF.mp4" type="video/mp4">
+      </video>
+    
+    <div>Your Score</div>
+    <div id="endScore">0</div>
+    <button class="btn" onclick="restart();">Try Again</button>
+</div>
+
+        
+
+
+
+        <script src="script.js"></script>
+
+
+
+    </body>
+</html>
